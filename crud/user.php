@@ -112,25 +112,25 @@ $(document).ready(function(){
 		<div style="height:50px;"></div>
 		<table class="table table-striped table-bordered table-hover">
 			<thead>
-				<th>Firstname</th>
-				<th>Lastname</th>
-				<th>Address</th>
+				<th>user_name</th>
+				<th>user_email</th>
+                <th>user_type</th>
 				<th>Action</th>
 			</thead>
 			<tbody>
 			<?php
 				include('conn.php');
 				
-				$query=mysqli_query($conn,"select * from `user`");
+				$query=mysqli_query($conn,"select * from `user1`");
 				while($row=mysqli_fetch_array($query)){
 					?>
 					<tr>
-						<td><?php echo ucwords($row['firstname']); ?></td>
-						<td><?php echo ucwords($row['lastname']); ?></td>
-						<td><?php echo $row['address']; ?></td>
+						<td><?php echo ucwords($row['user_name']); ?></td>
+						<td><?php echo ucwords($row['user_email']); ?></td>
+                        <td><?php echo ucwords($row['user_type']); ?></td>
 						<td>
-							<a href="#edit<?php echo $row['userid']; ?>" data-toggle="modal" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Edit</a> || 
-							<a href="#del<?php echo $row['userid']; ?>" data-toggle="modal" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+							<a href="#edit<?php echo $row['user_id']; ?>" data-toggle="modal" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Edit</a> || 
+							<a href="#del<?php echo $row['user_id']; ?>" data-toggle="modal" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a>
 							<?php include('button.php'); ?>
 						</td>
 					</tr>

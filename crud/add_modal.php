@@ -11,28 +11,19 @@
 				<form method="POST" action="addnew.php">
 					<div class="row">
 						<div class="col-lg-2">
-							<label class="control-label" style="position:relative; top:7px;">Firstname:</label>
+							<label class="control-label" style="position:relative; top:7px;">user_name:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" class="form-control" name="firstname">
+							<input type="text" class="form-control" name="user_name">
 						</div>
 					</div>
 					<div style="height:10px;"></div>
 					<div class="row">
 						<div class="col-lg-2">
-							<label class="control-label" style="position:relative; top:7px;">Lastname:</label>
+							<label class="control-label" style="position:relative; top:7px;">user_email:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" class="form-control" name="lastname">
-						</div>
-					</div>
-					<div style="height:10px;"></div>
-					<div class="row">
-						<div class="col-lg-2">
-							<label class="control-label" style="position:relative; top:7px;">Address:</label>
-						</div>
-						<div class="col-lg-10">
-							<input type="text" class="form-control" name="address">
+							<input type="text" class="form-control" name="user_email">
 						</div>
 					</div>
                 </div> 

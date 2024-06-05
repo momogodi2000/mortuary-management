@@ -1,11 +1,10 @@
 <?php
 	include('conn.php');
 	
-	$firstname=$_POST['firstname'];
-	$lastname=$_POST['lastname'];
-	$address=$_POST['address'];
+	$user_name=$_POST['user_name'];
+	$user_email=$_POST['user_email'];
 	
-	mysqli_query($conn,"insert into user (firstname, lastname, address) values ('$firstname', '$lastname', '$address')");
+	mysqli_query($conn,"insert into user1 (user_name, user_email) values ('$user_name', '$user_email')");
 	header('location:user.php');
 
 ?>

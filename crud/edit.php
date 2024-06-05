@@ -3,11 +3,11 @@
 	
 	$id=$_GET['id'];
 	
-	$firstname=$_POST['firstname'];
-	$lastname=$_POST['lastname'];
-	$address=$_POST['address'];
+	$user_name=$_POST['user_name'];
+	$address=$_POST['user_email'];
+
 	
-	mysqli_query($conn,"update user set firstname='$firstname', lastname='$lastname', address='$address' where userid='$id'");
+	mysqli_query($conn,"update user1 set user_name='$user_name', user_email='$user_email' where user_id='$id'");
 	header('location:index.php');
 
 ?>
