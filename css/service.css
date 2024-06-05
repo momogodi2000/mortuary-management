@@ -1,0 +1,23 @@
+header{
+    background-color: black;
+    margin-top: -20px;
+    width: 1300px;
+    height: 100px;
+    margin-left: -20px;
+    list-style: none;
+}
+header ul{
+    padding-top: 30px;
+    display: inline-flex;
+    margin-left: 300px;
+    list-style: none;
+}
+header ul li{
+    width: 100px;
+}
+.logo{
+    padding-top: 30px;
+    margin: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+}

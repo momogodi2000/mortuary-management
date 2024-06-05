@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.nav ul li{
+	text-decoration: none;
+
+}
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: ce;
+	align-items: center;
+	padding: 10px;
+	background-image: url(../images2/pronew.jpg);
+	
+}
+
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+	padding: 7px 5px;
+	font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
+header ul li a:hover{
+  animation: hov 1.2s;
+     border: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #736e6e;
+  background-color: #fff;
+  color: #4cafaf;
+}
+.container{
+	max-width: 700px;
+	width: 100%;
+	background: lavender;
+	padding: 25px 40px;
+	margin-left: 270px;
+	border-radius: 15px;
+}
+.container .title{
+	font-size: 35px;
+	font-weight: bold;
+	position: relative;
+	color: #9b59b6;
+}
+.container .title::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+form .user-details .form-group{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+.user-details .form-group .form-control{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.user-details .form-group input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.4s ease;
+}
+.user-details .form-group input:focus,
+.user-details .form-group input:focus{
+	border-color: #9b59b6;
+}
+form .button{
+	height: 45px;
+	margin: 45px 0;
+}
+form .button input{
+	height: 100%;
+	width: 650px;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .button input:hover{
+	background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+@media (max-width: 584px){
+	.container{
+		max-width: 100%;
+	}
+	form .user-details .form-group{
+	margin-bottom: 15px;
+	width: 100%;
+}
+}

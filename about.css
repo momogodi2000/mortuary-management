@@ -1,0 +1,141 @@
+ *{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+ body{
+	background:#efeeee;
+	height: 1200px;
+}
+.service{
+	height: 600px;
+	padding-top: 100px; 
+}
+.head{
+	color: #FFF;
+	height: 400px;
+	padding-top: 145px;
+	background-image: url(mort.jfif);
+	background-size:cover ;
+	background-repeat: no-repeat; 
+}
+.service ul{
+height: 600px;
+padding-top: 145px;
+margin-left: 65px;	
+}
+.service ul li{
+	line-height: 1.6;
+	padding-left:0px;
+	font-size: 25px;
+}
+header{
+	position: fixed;
+	min-width: 100%;
+	display: flex;
+	justify-content: space-between;
+  transition: 0s; 
+  padding:0px 0px;
+  z-index: 100000; 
+  background:#353434; 
+  height: 100px;   
+}
+header .logo{
+	position: relative;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 3px;
+	transition: 0s;
+	text-decoration: none;
+	font-size: 45px;
+	padding: 27px 50px;
+}
+header .logo:hover{
+  text-decoration: none;
+  color: #fff;
+}
+header ul{
+	position: relative;
+	display:flex;
+	align-items: center;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0s;
+	padding: 7px 13px;
+	font-size: 17px;
+  color: #fff;
+}
+header ul li a.active {
+ color: cyan;
+  border: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #736e6e;
+  background-color: #fff; 
+}
+header ul li a:hover{
+  animation: hov 1.2s;
+     border: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #736e6e;
+  background-color: #fff;
+  color: #4cafaf;
+}
+@keyframes hov{
+  10%{
+     color: #4cafaf;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #6eb7b7;
+  text-decoration-line: none;;
+  }
+}
+.container .social{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.container .social a{
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  line-height: 39px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: red;
+  margin: 10px;
+  color: white;
+  opacity: 0.4;
+  transition: 0.3s ease-in-out;
+}
+.container .social a:hover{
+  opacity: 1;
+  box-shadow: red;
+}
+.container .copyright{
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 16px;
+}
+.container h1{
+  color: white;
+}
+.container .copyright{
+  color: white;
+}
+.container {
+  background:grey;
+}
